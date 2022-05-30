@@ -2,17 +2,21 @@ import React from 'react'
 import Categories from './Categories';
 // import SlideCard from './SlideCard';
 import Slider from './Slider';
+import './Home.css'
+
 
 const Home = () => {
   return (
-    <>
+    
         <section className='home'>
-          <div className="container d_flex">
-            <Categories/>
-            <Slider/>
+          <div className="container d_flex ">
+           
+            <div style={{width: "300px"}}> <Categories />
+            </div>
+            <div style={{width: "1171px", alignSelf: "center", margin: ' auto', height: "510px"}}><Slider /></div>
           </div>
         </section>
-    </>
+    
   )
 }
 
