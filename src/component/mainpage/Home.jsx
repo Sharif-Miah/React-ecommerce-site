@@ -9,7 +9,7 @@ const Home = () => {
   return (
     
         <section className='home'>
-          <div className="container d_flex ">
+          <div className="container main-section d_flex" >
            
             <div style={{width: "300px"}}> <Categories />
             </div>

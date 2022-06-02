@@ -2,6 +2,9 @@
 .home{
     margin-top: 20px;
 }
+.main-section{
+    padding-bottom: 40px;
+}
 .homeSlide h1{
     font-size: 45px;
 }

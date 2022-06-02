@@ -1,8 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import logo from  '../../component/assets/images/logo.svg'
+import Cart from '../cart/Cart'
 
-const Search = () => {
+const Search = ({cartItem}) => {
 
     window.addEventListener('scroll', function(){
         const search = this.document.querySelector('.search')
@@ -28,7 +29,7 @@ const Search = () => {
                     <div className="cart">
                         <Link to='/cart'>
                             <i className='fa fa-shopping-bag icon-circle'></i>
-                            <span>0</span>
+                            <span>{cartItem.length === 0 ? '' : Cart.length}</span>
                         </Link>
                     </div>
                 </div>
