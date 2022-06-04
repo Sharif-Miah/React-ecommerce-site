@@ -202,7 +202,7 @@ input, button{
 
 
 
-/*-------product-btn------------*/
+/*-------control-btn------------*/
 .control-btn .next,
 .control-btn .prev{
     position: absolute;
@@ -237,7 +237,7 @@ input, button{
     cursor: pointer;
 }
 
-/*-------product-btn------------*/
+/*-------control-btn------------*/
 
 
 
