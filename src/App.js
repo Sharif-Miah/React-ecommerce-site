@@ -6,12 +6,14 @@ import {
   BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import { useState } from 'react';
 import Cart from './common/cart/Cart';
+import Sdata from './component/Sdata';
 
 
 function App() {
   // step1: fetch data from databage
 
   const {productItems} = Data
+  const {shopItem} = Sdata
 
   const [CartItem, setCardItem] = useState([])
 
@@ -44,7 +46,7 @@ function App() {
         <Header cartItem={CartItem}/>
           <Switch>
               <Route path="/" exact>
-                <Pages productItems={productItems} addToCart={addToCart} />
+                <Pages productItems={productItems} addToCart={addToCart} shopItem={shopItem} />
               </Route>
               <Route path="/cart" exact>
                 <Cart cartItem={CartItem} addToCart={addToCart} decreaseQty={decreaseQty}/>
