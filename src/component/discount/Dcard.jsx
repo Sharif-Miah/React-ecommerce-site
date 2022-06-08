@@ -17,8 +17,8 @@ const Dcard = () => {
     <Slider {...settings}>
     {Ddata.map((value, index)=> {
             return(
-                <>
-                    <div className="product" key={index}>
+                <div key={index}>
+                    <div className="product" >
                         <div className="box">
                             <div className="img">
                                 <img src={value.cover} alt="" />
@@ -27,7 +27,7 @@ const Dcard = () => {
                             <span>{value.price}</span>
                         </div>
                     </div>
-                </>
+                </div>
             )
         })}
         </Slider>

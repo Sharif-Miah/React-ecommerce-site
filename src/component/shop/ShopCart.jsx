@@ -1,9 +1,8 @@
-
 import React from 'react'
 
 const ShopCart = () => {
   return (
-    <div>ShopCart</div>
+    <div><h1>ShopCart</h1></div>
   )
 }
 
