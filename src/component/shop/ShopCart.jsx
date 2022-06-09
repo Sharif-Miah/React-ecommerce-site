@@ -1,9 +1,33 @@
+import React, {useState} from 'react'
 
-import React from 'react'
+const ShopCart = ({shopItems, addToCart}) => {
+  const [count, setCount] =useState(0)
+  const increment = () => {
+    setCount(count + 1 )
+  }
 
-const ShopCart = () => {
+
   return (
-    <div>ShopCart</div>
+    <>
+      {shopItems.map((shopItems)=> {
+        return(
+          
+          <div className="box">
+            <div className="product mtop">
+              <div className="img">
+                <span className='discount'>{shopItems.discount}% off</span>
+                <img src={shopItems.cover} alt="" />
+                <div className="product-like">
+                  <label>0</label>
+                  <i className='fa-regular fa-heart' onClick={increment}></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        )
+      })}
+    </>
   )
 }
 
