@@ -2,6 +2,8 @@ import React from 'react'
 import Catg from './Catg'
 import ShopCart from './ShopCart'
 import './style.css'
+import Sdata from './Sdata'
+
 
 const Shop = ({shopItems, addToCart}) => {
   return (
@@ -23,7 +25,7 @@ const Shop = ({shopItems, addToCart}) => {
                             </div>
                         </div>
                         <div className="product-content grid1">
-                            <ShopCart shopItem={shopItems} addToCart={shopItems}/>
+                        <ShopCart shopItem={shopItems} addToCart={addToCart}/>
                         </div>
                 </div>
             </div>
