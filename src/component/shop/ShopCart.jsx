@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 
 
-const ShopCart = ({productItems, addToCart}) => {
+const ShopCart = ({shopItems, addToCart}) => {
 
     const [count, setCount] = useState(0)
     const incriment = () => {
@@ -10,11 +10,12 @@ const ShopCart = ({productItems, addToCart}) => {
     }
 
 
+
   return (
     <>
 
     {
-        productItems.map((productItems, index) => {
+        shopItems.map((productItems, index) => {
         return(
             <div className="box" key={index}>
             <div className="product mtop">
@@ -48,6 +49,7 @@ const ShopCart = ({productItems, addToCart}) => {
         
         })}
     </>
+    <div><h1>ShopCart</h1></div>
   )
 }
 
