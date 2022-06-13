@@ -5,7 +5,7 @@ import Home from '../component/mainpage/Home'
 import NewArrivals from '../component/newarrivals/NewArrivals'
 import Shop from '../component/shop/Shop'
 import TopCate from '../component/Top/TopCate'
-import ShopCart from '../component/shop/ShopCart'
+
 
 
 const Pages = ({productItems, CartItem, addToCart, shopItems}) => {

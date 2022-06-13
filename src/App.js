@@ -7,13 +7,14 @@ import {
 import { useState } from 'react';
 import Cart from './common/cart/Cart';
 import Sdata from './component/Sdata';
+import Shopdata from '../src/component/shop/Shopdata'
 
 
 function App() {
   // step1: fetch data from databage
 
   const {productItems} = Data
-  const {shopItem} = Sdata
+  const {shopItems} = Shopdata
 
   const [CartItem, setCardItem] = useState([])
 
@@ -46,7 +47,7 @@ function App() {
         <Header cartItem={CartItem}/>
           <Switch>
               <Route path="/" exact>
-                <Pages productItems={productItems} addToCart={addToCart} shopItem={shopItem} />
+                <Pages productItems={productItems} addToCart={addToCart} shopItems={Shopdata} />
               </Route>
               <Route path="/cart" exact>
                 <Cart cartItem={CartItem} addToCart={addToCart} decreaseQty={decreaseQty}/>
